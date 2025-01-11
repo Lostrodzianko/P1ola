@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    
+}
+.grid-container {
+    display: grid;
+     
+}
+.imagen{
+    position:relative;
+    top: -10%;
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    min-width: 30%; /* La imagen tendrá un ancho mínimo del 30% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en la parte inferior de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    
+    
+}
+.inicio{
+    display: flex;
+    height: 100dvh; /* Toda la altura de la ventana */
+    width: 100%;   /* Toda la anchura de la ventana */
+}
+.nombre{
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    background-color: yellowgreen;
+    padding: 10%;   
+    text-align: center;
+    min-width: 50%;
+}
+.texto_nombre{
+    background-color: white;
+}
+.descripcion{
+position:relative;
+align-items: center;
+text-align: center;
+left: -20%;
+top: 70%;
+
+}
+.menu{
+    display: flex;
+    height: 100dvh; /* Toda la altura de la ventana */
+    width: 100%;   /* Toda la anchura de la ventana */
+justify-content: flex-end;
+}
+.Boton_menu{
+    background-color: yellowgreen;
+    padding: 10px 30px;
+    text-align: center;
+    width: auto;
+    height: 5%;
+}
+.escrito{
+    position:absolute;
+    max-width: 600px;   
+    top:    170%;
+    left: 10%;
+}
+.seccion {
+    height: 100dvh; /* Cada sección ocupa toda la altura de la ventana */
+    
+    box-sizing: border-box;
+}
+.articulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: yellow ;
+    
+}
+.articulo{
+    max-width: 900px;
+    padding: 10% ;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: auto;
+}
+.texto_parrafos{
+    text-align: center;    
+}
+.Texto_contacto{
+    max-width: 900px;
+}
