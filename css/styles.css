@@ -70,6 +70,14 @@ html, body {
     justify-content: flex-end;
 }
 
+.texto-pag-2{
+    color: #8C8149;
+padding: 0% 0% 10% 0%;
+}
+.Boton_menu a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del botón */
+  }
 .Boton_menu {
     background-color: yellowgreen;
     padding: 10px 30px;
