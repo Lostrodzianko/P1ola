@@ -5,9 +5,11 @@
 }
 
 html, body {
-    height: 100%;
+    height: 100dvh;
+    
     margin: 0;
     padding: 0;
+    
 }
 
 .grid-container {
@@ -16,12 +18,16 @@ html, body {
 
 .imagen {
     position: absolute;
+    background-color: rgba(0, 0, 0 ); /* Cambiado para aplicar un color de fondo semitransparente */
     top: 0; /* Cambiado para que la imagen esté alineada con la parte superior */
     height: 100%; /* Cambiado para que ocupe toda la altura del contenedor */
     width: 100%;
     object-fit: cover; /* Mantiene la proporción de la imagen */
-    z-index: 1; /* La imagen se coloca detrás del contenido */
-    background-color: rgba(0, 0, 0, 0.7); /* Cambiado para aplicar un color de fondo semitransparente */
+    filter: brightness(60%); /* Reducir el brillo al 50% */   
+}
+.imagen_fondo {
+    
+    background-color: rgba(0, 0, 0 ); /* Cambiado para aplicar un color de fondo semitransparente */
 }
 
 .inicio {
@@ -30,6 +36,8 @@ html, body {
     width: 100%;   /* Toda la anchura de la ventana */
     justify-content: flex-end; /* Cambiado a flex-end para alinear el contenido a la derecha */
     position: relative; /* Añadido para que el contenido se posicione sobre la imagen */
+    
+    z-index: 1; /* La imagen se coloca detrás del contenido */
 }
 
 .nombre {
@@ -50,7 +58,7 @@ html, body {
     position: relative;
     align-items: center;
     text-align: center;
-    left: -10%;
+
     top: 80%;
     z-index: 3; /* Asegura que el contenido esté por encima de la imagen */
     font-family: 'Roboto', sans-serif;
@@ -65,22 +73,49 @@ html, body {
 
 .menu {
     display: flex;
-    height: 100vh; /* Cambiado de 100dvh a 100vh */
+    height: 100%; /* Cambiado de 100dvh a 100vh */
     width: 100%;   /* Toda la anchura de la ventana */
     justify-content: flex-end;
+    padding-right: 0.4%;
+    background-color: #F2EDD5;
+    
 }
 
+.Boton_menu a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del botón */
+  }
 .Boton_menu {
-    background-color: yellowgreen;
+    
     padding: 10px 30px;
     text-align: center;
     border: none; /* Elimina el borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    
     height: fit-content;
     margin: 5px; /* Añadido margen para separar los botones */
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color:inherit
 }
 
+button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  button:hover::before {
+    transform: translateX(0);
+  }
 .escrito {
     position: absolute;
     max-width: 600px;   
@@ -89,33 +124,61 @@ html, body {
 }
 
 .seccion {
-    height: 100vh; /* Cambiado de 100dvh a 100vh */
+    height: 100%; /* Cambiado de 100dvh a 100vh */
     box-sizing: border-box;
+    padding: 0%; /* Añadido espacio interno */
+    margin: 0%;
+    background-color: #BFB68A;
+
 }
 
 .articulos {
+    gap: 10%; /* Añadido espacio entre las columnas */
+    margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100dvh; /* Cambiado para que se ajuste al contenido */
-    background-color: yellow;
-    padding: 20px; /* Añadido padding para espacio interno */
+    padding-left: 3%;
+    width: 100%;
 }
 
 .articulo {
+    width: 500px;
+    height: 600px;
     max-width: 900px;
-    padding: 20px; /* Aumentado para más espacio interno */
-    background-color: white;
+    max-height: 700px;
+    padding: 50px; /* Aumentado para más espacio interno */
+    background-color: #8C8149;
     border-radius: 10px;
-    margin: 10px; /* Cambiado para un margen uniforme */
+    margin: 5px; /* Cambiado para un margen uniforme */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadido sombra para profundidad */
 }
 
 .texto_parrafos {
-    text-align: center;    
+    text-align: start;    
+    color: white;
+font-size: 20px;
+padding: 5% 5%;
+max-height:550px;
+font-weight: 100;
+}
+.titulo_parrafos{
+    text-align: center;
+    color: white;
+font-size: 30px;
 }
 
 .Texto_contacto {
     max-width: 900px;
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 20px; /* Aumentado para más espacio interno */
+}
+
+.Redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
