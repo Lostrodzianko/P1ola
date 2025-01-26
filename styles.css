@@ -6,14 +6,49 @@
 
 html, body {
     height: 100dvh;
-    
+    width: 100%;
     margin: 0;
     padding: 0;
+    min-width: 100vh;
     
 }
 
 .grid-container {
     display: grid;
+}
+@media (min-width: 768px) {
+    .texto_nombre {
+        font-size: 60px; /* Ajustar tamaño de fuente */
+    }
+    .articulo {
+        width: 95%; /* Ajustar ancho en pantallas pequeñas */
+    }
+    .texto_parrafos {
+        font-size: 120%; /* Ajustar tamaño de fuente */
+    }
+    .titulo_parrafos {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+    }
+    .escrito{
+        top: 150%; /* Mantener esta posición según tu diseño */
+    }
+}
+@media (max-width: 767px) {
+    .texto_nombre {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+    }
+    .articulo {
+        width: 95%; /* Ajustar ancho en pantallas pequeñas */
+    }
+    .texto_parrafos {
+        font-size: 4.7vw; /* Ajustar tamaño de fuente */
+    }
+    .titulo_parrafos {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+    }
+    .escrito{
+        top: 140%; /* Mantener esta posición según tu diseño */
+    }
 }
 
 .imagen {
@@ -48,7 +83,7 @@ html, body {
 }
 
 .texto_nombre {
-    font-size: 50px;
+    
     text-align: end; /* Alineación a la derecha */
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -127,7 +162,7 @@ button::before {
 .escrito {
     position: absolute;
     max-width: 600px;   
-    top: 170%; /* Mantener esta posición según tu diseño */
+    
     left: 10%;
 }
 
@@ -141,14 +176,14 @@ button::before {
 }
 
 .articulos {
-    gap: 10%; /* Añadido espacio entre las columnas */
+    gap: 3%; /* Añadido espacio entre las columnas */
     margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100dvh; /* Cambiado para que se ajuste al contenido */
-    padding-left: 3%;
+    padding: 0.7% 0%;
     width: 100%;
 }
 
@@ -167,7 +202,7 @@ button::before {
 .texto_parrafos {
     text-align: start;    
     color: white;
-font-size: 20px;
+
 padding: 5% 5%;
 max-height:550px;
 font-weight: 100;
