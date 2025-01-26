@@ -33,8 +33,13 @@ html, body {
         top: 160%; /* Mantener esta posición según tu diseño */
         font-size: 90%; /* Ajustar tamaño de fuente */
     }
+    
 }
 @media (max-width: 768px) {
+    body {
+        width: 100%; /* Mantener el ancho al 100% en pantallas pequeñas */
+         /* Añadir padding en pantallas pequeñas */
+    }
     .texto_nombre {
         font-size: 6vw; /* Ajustar tamaño de fuente */
     }
