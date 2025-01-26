@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    
+    min-width: 100vh;
     
 }
 
@@ -24,30 +24,37 @@ html, body {
         width: 95%; /* Ajustar ancho en pantallas pequeñas */
     }
     .texto_parrafos {
-        font-size: 120%; /* Ajustar tamaño de fuente */
+        font-size: 130%; /* Ajustar tamaño de fuente */
     }
     .titulo_parrafos {
         font-size: 6vw; /* Ajustar tamaño de fuente */
     }
     .escrito{
-        top: 150%; /* Mantener esta posición según tu diseño */
+        top: 160%; /* Mantener esta posición según tu diseño */
+        font-size: 90%; /* Ajustar tamaño de fuente */
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .texto_nombre {
         font-size: 6vw; /* Ajustar tamaño de fuente */
     }
     .articulo {
         width: 95%; /* Ajustar ancho en pantallas pequeñas */
+        
     }
     .texto_parrafos {
-        font-size: 4.7vw; /* Ajustar tamaño de fuente */
+        font-size: 3vw; /* Ajustar tamaño de fuente */
+        
     }
     .titulo_parrafos {
         font-size: 6vw; /* Ajustar tamaño de fuente */
+        
     }
     .escrito{
-        top: 140%; /* Mantener esta posición según tu diseño */
+        top: 160%; /* Mantener esta posición según tu diseño */
+        width: fit-content; /* Ajustar ancho en pantallas pequeñas */
+        font-size: 2.0vw;
+
     }
 }
 
@@ -60,7 +67,6 @@ html, body {
     object-fit: cover; /* Mantiene la proporción de la imagen */
     filter: brightness(60%); /* Reducir el brillo al 50% */   
 }
-
 .imagen_fondo {
     
     background-color: rgba(0, 0, 0 ); /* Cambiado para aplicar un color de fondo semitransparente */
@@ -77,8 +83,8 @@ html, body {
 }
 
 .nombre {
-    padding-right: 10%;
-    padding-top: 10%;
+    padding-right: 5%;
+    padding-top: 5%;
     text-align: end; /* Alineación a la derecha */
     z-index: 2; /* Asegura que el contenido esté por encima de la imagen */
 }
@@ -177,23 +183,22 @@ button::before {
 }
 
 .articulos {
-    gap: 3%; /* Añadido espacio entre las columnas */
+    gap: 10%; /* Añadido espacio entre las columnas */
     margin: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100dvh; /* Cambiado para que se ajuste al contenido */
-    padding: 0.7% 0%;
+    padding-left: 3%;
     width: 100%;
+    
 }
 
 .articulo {
-    width: 500px;
-    height: 600px;
-    max-width: 900px;
-    max-height: 700px;
-    padding: 50px; /* Aumentado para más espacio interno */
+    
+    max-width: 800px; /* Mantener el ancho máximo */
+    height: auto; 
+    padding: 50px 20px ; /* Aumentado para más espacio interno */
     background-color: #8C8149;
     border-radius: 10px;
     margin: 5px; /* Cambiado para un margen uniforme */
