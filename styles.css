@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    min-width: 100vh;
+    
     
 }
 
@@ -60,6 +60,7 @@ html, body {
     object-fit: cover; /* Mantiene la proporción de la imagen */
     filter: brightness(60%); /* Reducir el brillo al 50% */   
 }
+
 .imagen_fondo {
     
     background-color: rgba(0, 0, 0 ); /* Cambiado para aplicar un color de fondo semitransparente */
