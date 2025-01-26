@@ -39,7 +39,9 @@ html, body {
     body {
         width: 100%; /* Mantener el ancho al 100% en pantallas pequeñas */
          /* Añadir padding en pantallas pequeñas */
-        height: 100%; /* Mantener la altura al 100% en pantallas pequeñas */
+    }
+    .seccion {
+        height: 100%; /* Cambiado de 100dvh a 100vh */
     }
     .texto_nombre {
         font-size: 6vw; /* Ajustar tamaño de fuente */
