@@ -15,6 +15,56 @@ html, body {
 .grid-container {
     display: grid;
 }
+@media (min-width: 768px) {
+    .texto_nombre {
+        font-size: 60px; /* Ajustar tamaño de fuente */
+    }
+    .articulo {
+        width: 95%; /* Ajustar ancho en pantallas pequeñas */
+    }
+    .texto_parrafos {
+        font-size: 130%; /* Ajustar tamaño de fuente */
+    }
+    .titulo_parrafos {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+    }
+    .escrito{
+        top: 160%; /* Mantener esta posición según tu diseño */
+        font-size: 90%; /* Ajustar tamaño de fuente */
+    }
+    
+}
+@media (max-width: 768px) {
+    body {
+        width: 100%; /* Mantener el ancho al 100% en pantallas pequeñas */
+        height: 100vh;
+    }
+    
+    .texto_nombre {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+    }
+    .articulo {
+        width: 95%; /* Ajustar ancho en pantallas pequeñas */
+        
+    }
+    .texto_parrafos {
+        font-size: 3vw; /* Ajustar tamaño de fuente */
+        
+    }
+    .titulo_parrafos {
+        font-size: 6vw; /* Ajustar tamaño de fuente */
+        
+    }
+    .escrito{
+        top: 160%; /* Mantener esta posición según tu diseño */
+        width: 100%; /* Ajustar ancho en pantallas pequeñas */
+        font-size: 2.0vw;
+
+    }
+    .articulos{
+        flex-direction: column;
+    }
+}
 
 .imagen {
     position: absolute;
@@ -119,7 +169,7 @@ button::before {
 .escrito {
     position: absolute;
     max-width: 600px;   
-    top: 170%; /* Mantener esta posición según tu diseño */
+    width: 100%;
     left: 10%;
 }
 
@@ -145,11 +195,11 @@ button::before {
 }
 
 .articulo {
-    width: 500px;
-    height: 600px;
-    max-width: 900px;
-    max-height: 700px;
-    padding: 50px; /* Aumentado para más espacio interno */
+    
+    max-width: 800px; /* Mantener el ancho máximo */
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; 
+    padding: 50px 20px ; /* Aumentado para más espacio interno */
     background-color: #8C8149;
     border-radius: 10px;
     margin: 5px; /* Cambiado para un margen uniforme */
@@ -172,6 +222,7 @@ font-size: 30px;
 
 .Texto_contacto {
     max-width: 900px;
+    width: 100%;    
     margin: 0 auto; /* Centrar el contenido */
     padding: 20px; /* Aumentado para más espacio interno */
 }
