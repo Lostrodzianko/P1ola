@@ -9,7 +9,6 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    min-width: 100vh;
     
 }
 
@@ -20,11 +19,18 @@ html, body {
     .texto_nombre {
         font-size: 60px; /* Ajustar tamaño de fuente */
     }
+    
+    .articulos{
+        display: flex;
+        flex-direction: row;
+        font-size: 30%;
+    }
     .articulo {
         width: 95%; /* Ajustar ancho en pantallas pequeñas */
     }
     .texto_parrafos {
-        font-size: 130%; /* Ajustar tamaño de fuente */
+        font-size: 1vw; /* Ajustar tamaño de fuente */
+        max-height: 750px;  
     }
     .titulo_parrafos {
         font-size: 6vw; /* Ajustar tamaño de fuente */
@@ -44,8 +50,13 @@ html, body {
     .texto_nombre {
         font-size: 6vw; /* Ajustar tamaño de fuente */
     }
+    .articulos{
+        display: flex;
+        flex-direction: column;
+    }
     .articulo {
         width: 95%; /* Ajustar ancho en pantallas pequeñas */
+        justify-content: center;
         
     }
     .texto_parrafos {
@@ -66,12 +77,11 @@ html, body {
 
 .imagen {
     position: absolute;
-    background-color: rgba(0, 0, 0 ); /* Cambiado para aplicar un color de fondo semitransparente */
-    top: 0; /* Cambiado para que la imagen esté alineada con la parte superior */
     height: 100%; /* Cambiado para que ocupe toda la altura del contenedor */
-    width: 100%;
+    width: 100vw; /* Cambiado para que ocupe toda la anchura del contenedor */
     object-fit: cover; /* Mantiene la proporción de la imagen */
     filter: brightness(60%); /* Reducir el brillo al 50% */   
+
 }
 .imagen_fondo {
     
@@ -122,7 +132,7 @@ html, body {
 .menu {
     display: flex;
     height: 100%; /* Cambiado de 100dvh a 100vh */
-    width: 100vw;   /* Toda la anchura de la ventana */
+
     justify-content: flex-end;
     padding-right: 0.4%;
     background-color: #F2EDD5;
@@ -181,6 +191,7 @@ button::before {
 
 .seccion {
     height: 100%; /* Cambiado de 100dvh a 100vh */
+    width: 100vw;   /* Toda la anchura de la ventana */
     box-sizing: border-box;
     padding: 0%; /* Añadido espacio interno */
     margin: 0%;
@@ -191,18 +202,16 @@ button::before {
 .articulos {
     gap: 10%; /* Añadido espacio entre las columnas */
     margin: 0%;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 3%;
+    padding: 0% 5%; /* Añadido espacio interno */
     width: 100%;
     
 }
 
 .articulo {
     
-    max-width: 800px; /* Mantener el ancho máximo */
+    
     height: auto; 
     padding: 50px 20px ; /* Aumentado para más espacio interno */
     background-color: #8C8149;
