@@ -191,7 +191,6 @@ button::before {
 
 .seccion {
     height: 100%; /* Cambiado de 100dvh a 100vh */
-    width: 100vw;   /* Toda la anchura de la ventana */
     box-sizing: border-box;
     padding: 0%; /* Añadido espacio interno */
     margin: 0%;
