@@ -1,5 +1,5 @@
 // script.js
-const sections = document.querySelectorAll('.seccion');
+const sections = document.querySelectorAll('.Pag');
 const options = {
     root: null, // Usar el viewport como raíz
     rootMargin: '0px',
