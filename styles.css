@@ -107,14 +107,14 @@ height: 100vh;
     max-width: 100%;
     width: 100%;
     text-align: center;
-    padding: 1%;
+    padding: 1% =%;
     font-size: 3rem;
 }
 .Parrafos{
     max-width: 100%;
     width: 100%;
     text-align: center;
-    padding: 2%;
+    padding: 2% 2%;
     
     overflow: hidden;
 }
