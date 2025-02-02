@@ -30,16 +30,23 @@
     .Titulo{
         font-size: 2rem;
     }
+    .Titulos{
+        font-size: 1rem;
+    }
 }
     @media only screen and (min-width: 768px) {
         .area_2{
             flex-direction: row;
         }
         .Parrafos{
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         .Titulo{
             font-size: 5rem;
+        }
+        .Titulos{
+            font-size: 3rem;
+
         }
     }
 
@@ -114,7 +121,7 @@ height: 100vh;
     width: 100%;
     text-align: center;
     padding: 1% 0%;
-    font-size: 3rem;
+    
 }
 .Parrafos{
     max-width: 100%;
@@ -154,9 +161,104 @@ height: 100vh;
     border-radius: 30px;
     width: 100%;
     height: 70%;
-    background-color: white;
+    background-color: #3e3e3f;
     object-fit: cover;
     overflow: hidden;    
+}
+.Dubijo{
+position:relative;
+width: 100vh;
+height: 100%;
+left: -6%;
+
+
+}
+.Cabeza {
+    width: 100px;
+    height: 100px;
+    background-color: #F2E3D5; /* Color de la cabeza */
+    transform: rotate(45deg);
+    margin: 50px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    top: 0vh;
+    left: 45%;
+}
+
+.Cabeza::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent; /* Lado izquierdo */
+    border-right: 100px solid transparent; /* Lado derecho */
+    border-bottom: 150px solid #F26B1D; /* Color del triángulo */
+    border-radius: 20px; /* Bordes redondeados (no tendrá efecto en el triángulo) */
+    margin: 50px;
+    transform: rotate(136deg);
+    top: -77%;
+    left: -101%;
+    z-index: -1;
+}
+
+
+.Ojos{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    transform: rotate(70deg);
+    top: 28%;
+    left: -6%;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 40px;
+        background-color: black;
+        border-radius: 5px;
+        transform: rotate(119deg);
+        top: -159%;
+        left: -576%;
+    }
+}
+.Cuerpo{
+    position: absolute;
+    width: 129px;
+    height: 160px;
+    background-color: #F26B1D;
+    clip-path: polygon(7% 0%, 86% 0%, 100% 138%, 0% 100%);
+    top: 48%;
+    left: 49%;
+    z-index: 1;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 94px;
+        height: 145px;
+        background-color: #F2E3D5;
+        clip-path: polygon(11% 39%, 77% -13%, 121% 138%, 0% 100%);
+        top: -3%;
+        left: 13%;
+    }
+}
+.Sombra{
+    position: relative;
+    height: 223px;
+    width: 567px;
+    background-color: #343435;
+    top: 58%;
+    left: 29%;
+    border-radius: 50%;
+    z-index: 0;
+    transform: rotate(-4deg);
+
+}
+.Flor{
+    
 }
 .foto_2{
     width: 100vw;
@@ -164,9 +266,11 @@ height: 100vh;
     object-fit: cover;
 }
 .imagen_2{
+    position: absolute;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    
 }
 .Articulos_3{
     display: grid;
