@@ -174,46 +174,64 @@ left: -6%;
 
 }
 .Cabeza {
+ 
     width: 100px;
     height: 100px;
-    background-color: #F2E3D5; /* Color de la cabeza */
-    transform: rotate(45deg);
+    background-color: #F2E3D5;
+    transform: rotate(35deg);
     margin: 50px;
     position: absolute;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     top: 0vh;
-    left: 45%;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 100px solid transparent; /* Lado izquierdo */
-        border-right: 100px solid transparent; /* Lado derecho */
-        border-bottom: 150px solid #F26B1D; /* Color del triángulo */
-        border-radius: 20px; /* Bordes redondeados (no tendrá efecto en el triángulo) */
-        margin: 50px;
-        transform: rotate(136deg);
-        top: -77%;
-        left: -101%;
-        z-index: -1;
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        width: 10%;
-        height: 10%;
-        border-radius: 50%;
-        background-color: #343435;
-        z-index: 3;
-        top: 94%;
-        left: 93%;
-    }
-    
+    left: 28%;
+    animation-name: Movimiento_de_caeza;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+
+}
+.Cabeza::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent; /* Lado izquierdo */
+    border-right: 100px solid transparent; /* Lado derecho */
+    border-bottom: 150px solid #F26B1D; /* Color del triángulo */
+    border-radius: 20px; /* Bordes redondeados (no tendrá efecto en el triángulo) */
+    margin: 50px;
+    transform: rotate(136deg);
+    top: -77%;
+    left: -101%;
+    z-index: -1;
+}
+.Cabeza::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: #343435;
+    z-index: 3;
+    top: 94%;
+    left: 93%;
 }
 
+@keyframes Movimiento_de_caeza{
+50%{
 
+    transform: rotate(45deg);
+
+}
+100%{
+    transform: rotate(0deg);
+}
+
+}
+
+    
 
 .Ojos{
     content: "";
@@ -225,6 +243,11 @@ left: -6%;
     transform: rotate(70deg);
     top: 28%;
     left: -6%;
+    animation-name: Ojitos_lindos; /* Corrige el nombre de la animación */
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
     
 }
 .Ojos::after{
@@ -245,7 +268,7 @@ left: -6%;
     background-color: #F26B1D;
     clip-path: polygon(7% 0%, 86% 0%, 100% 138%, 0% 100%);
     top: 48%;
-    left: 49%;
+    left: 32%;
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -265,7 +288,7 @@ left: -6%;
     width: 567px;
     background-color: #343435;
     top: 58%;
-    left: 29%;
+    left: 17%;
     border-radius: 50%;
     z-index: 0;
     transform: rotate(-4deg);
@@ -280,7 +303,8 @@ left: -6%;
     border: 5px solid #262626;
     z-index: 3;
     top: -24%;
-    left: 19%;
+    left: 70%;
+    
 }
 .Flor::after {
     content: "";
@@ -315,7 +339,7 @@ left: -6%;
     border: 5px solid #262626;
     z-index: 1;
     top: 75%;
-    left: 18.7%;
+    left: 69.7%;
     transform: rotate(90deg);
     
 }
