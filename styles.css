@@ -302,10 +302,11 @@ left: -6%;
     border-radius: 50%;
     border: 5px solid #262626;
     z-index: 3;
-    top: -24%;
+    top: -107%;
     left: 70%;
-    
 }
+    
+
 .Flor::after {
     content: "";
     position: absolute;
@@ -338,7 +339,7 @@ left: -6%;
     border-radius: 50%;
     border: 5px solid #262626;
     z-index: 1;
-    top: 75%;
+    top: -8%;
     left: 69.7%;
     transform: rotate(90deg);
     
